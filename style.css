@@ -5,31 +5,43 @@
     /* font-family: 
     system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
 }
+/* body{
+    width: 100%;
+    height: 100vh;
+    background-image: url('images/SameeraMoussa.jpg');
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 100;
+} */
 .main{
-    background-color: rgb(148, 163, 171);
+    background-color:burlywood;
 }
 .main > h1{
     position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 30px;
-    margin-left: 37rem;
+    margin-top: 20px;
+    margin-left: 27rem;
+    color: floralwhite;
+
 }
 .main .underlin{
     position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 80px;
-    margin-left: 37rem;
-    width: 11rem;
+    margin-top: 65px;
+    margin-left: 27rem;
+    width: 31rem;
     height: 3px;
-    background-color: black;
+    background-color: rgb(0, 0, 0);
 }
 .uppercontainer{
     width: 100%;
-    height: 100vh;
+    height: 670px;
     display: grid;
     place-items: center;
     background-color: transparent ;
@@ -38,14 +50,15 @@
 
 .container{
     border-radius: 1.2rem;
-    padding: 2.5rem;
+    padding: 0.5rem;
     width: 40rem;
-    height: 25rem;
+    height: 29rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     background-color: beige;
+    box-shadow:  10px 10px 30px 10px rgb(255, 204, 115);
 
 }
 .container .image{
@@ -53,17 +66,25 @@
 }
 .image{
     width: 9.2rem;
-    height: 8.2rem;
-    border: 2px solid;
+    height: 9.2rem;
     border-radius: 50%;
+    /* border: 1px solid red; */
     /* background-image:  url("https://res.cloudinary.com/diqqf3eq2/image/upload/v1586883409/person-2_np9x5l.jpg")  ; 
     background-attachment: fixed;
     background-size: cover;
     background-position: center center; */
 }
+.image01{
+    width: 100%;
+    border-radius: 50%;
+    height: 100%;
 
+}
 .main .arrow button{
-    width: 2.2rem;
+    width: 2.3rem;
+    height: 1.4rem;
+    border-radius: 1.2rem;
+    padding: 5px;
     margin-right: 20px;
     margin-top: 20px;
     background-color: rgb(232, 215, 190);
@@ -73,11 +94,14 @@
 }
 
 .person{
-    font-size: 2.3rem;
+    font-size: 2.5rem;
     margin: 20px 0px 0px 0px  ;
 }
 .profession{
-    font-size: 1.3rem;
+    font-size: 1.5rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: italic;
+    color: rgb(155, 155, 246);
     margin: 0px 5px 0px 0px  ;
     
 }
@@ -88,10 +112,12 @@
 
 .Btn{
     width: 6.2rem;
-    margin-top: 20px;
+    margin-top: 10px;
+    margin-left: -1.2rem;
     height: 2.1rem;
     border: none;
+    border-radius: 30px;
     outline: none;
-    background-color: rgb(232, 215, 190);
+    background-color: rgb(214, 184, 138);
     cursor: pointer;
 }
