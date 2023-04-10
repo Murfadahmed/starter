@@ -1,7 +1,7 @@
 let starter = [
     {
         id: 0,
-        image : "images/jabirHayyan.jpg",
+        image : "images/JabirHayyan.jpg",
         // image : 'url("images/IbneAlHatham.jpg")',
         name: "Jabir Bin Hayan",
         proffesion: "Author,Alchemist,physician,Astronomer,philospher",
@@ -39,7 +39,7 @@ let starter = [
 {
     id: 5,
     
-    image : 'images/hassan-kamel-al-Sabbbah.jpg',
+    image : 'images/hassanAlSabbbah.jpg',
         name: "Hassan Kamel Al-Sabbah",
         proffesion: "Mathematician & Engenieer",
         content: "Hassan Kamel Al-Sabbah was a Lebanese electrical and electronics research engineer, mathematician and inventor. He was born in Nabatieh, Lebanon.The Lebanese engineer Hassan Kamel Assabbah's dream was to build sun-powered cells in the Arabian desert; the main ingredients for solar power are sand (making solar cells) and strong sun (powering it).",
