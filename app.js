@@ -31,7 +31,7 @@ let starter = [
 },
 {
     id: 4,
-    image : '/images/AliMoustafaMosharafa.jpg',
+    image : 'images/AliMoustafaMosharafa.jpg',
     name: "Dr. Ali Moustafa Mosharafa",
     proffesion: "Physics",
     content: "Dr. Ali Moustafa Mosharafa was an Egyptian theoretical physicist. He was professor of applied mathematics in the Faculty of Science at Cairo University, and also served as its first dean. He contributed to the development of the quantum theory as well as the theory of relativity.",
@@ -39,35 +39,35 @@ let starter = [
 {
     id: 5,
     
-    image : '/images/hassan-kamel-al-Sabbbah.jpg',
+    image : 'images/hassan-kamel-al-Sabbbah.jpg',
         name: "Hassan Kamel Al-Sabbah",
         proffesion: "Mathematician & Engenieer",
         content: "Hassan Kamel Al-Sabbah was a Lebanese electrical and electronics research engineer, mathematician and inventor. He was born in Nabatieh, Lebanon.The Lebanese engineer Hassan Kamel Assabbah's dream was to build sun-powered cells in the Arabian desert; the main ingredients for solar power are sand (making solar cells) and strong sun (powering it).",
     },
     {
         id: 6,
-        image : '/images/SmiaMemni.jpg',
+        image : 'images/SmiaMemni.jpg',
         name: "Samia Abdel Rahim Maimani ",
         proffesion: "Proffesor,Inventor,NeuroSurgeon,Physician",
         content: "Samia Abdel Rahim Maimani (1955 - 20 October 1997) was a Saudi university professor, inventor, physician, and neurosurgeon. She was an alumna of King Faisal University College of Medicine and Charles R. Drew University of Medicine and Science. She was the first Saudi woman to specialize in neurosurgery. She obtained patents in several medical fields.Maimani was born in Saudi Arabia. Her father, Abd al-Rahim Maimani, had an accident that broke his skull, killing him on the spot.",
     },
     {
         id: 7,
-        image : '/images/Alkhawarzmi.webp',
+        image : 'images/Alkhawarzmi.webp',
         name: "Muḥammad-ibn-Mūsā-al-Khwārizmī",
         proffesion: "Mathematics, astronomy, geography",
         content: "Muḥammad ibn Mūsā al-Khwārizmī, or al-Khwarizmi, was a Persian polymath from Khwarazm, who produced vastly influential works in mathematics, astronomy, and geography. Around 820 CE, he was appointed as the astronomer and head of the library of the House of Wisdom in Baghdad.",
     },
     {
         id: 8,
-        image : '/images/Prof_Gamal_Hamdan.jpg',
+        image : 'images/Prof_Gamal_Hamdan.jpg',
         name: "Gamal Hamdan",
         proffesion: "Egyptian Scholar",
         content: "Gamal Hamdan was an Egyptian scholar and geographer. Among his most prominent books are The Character of Egypt, Studies of the Arab World, and The Contemporary Islamic World Geography, which form a trilogy on Egypt's natural, economic, political, and cultural character and its position in the world.",
     },
     {
         id: 9,
-        image : '/images/sumeraMousa.jpg',
+        image : 'images/sumeraMousa.jpg',
                 name: "Sameera Moussa",
                 proffesion: "	Nuclear Physics",
                 content: "Sameera Moussa  (March 3, 1917 - August 5, 1952) was the first female Egyptian nuclear physicist.[1] Sameera held a doctorate in atomic radiation. She hoped her work would one day lead to affordable medical treatments and the peaceful use of atomic energy. She organized the Atomic Energy for Peace Conference and sponsored a call that set an international conference under the banner 'Atoms for Peace'. She was the first woman to work at Cairo University.",
@@ -84,7 +84,7 @@ let starter = [
 let images = document.querySelector('.image01')
 
 
-console.log(images)
+// console.log(images)
 
 let name = document.querySelector('.person')
 
@@ -125,33 +125,33 @@ function showContect (add){
       name.textContent = item.name
       profession.textContent = item.proffesion
       content.textContent = item.content
-      console.log(item.image)
+    //   console.log(item.image)
 
 }
 rightBtn.addEventListener('click', () => {
     clicks = ++clicks;
-    console.log(clicks)
+    // console.log(clicks)
     if (clicks < 0 || clicks > starter.length - 1) {
         clicks = 0;
     }
-    console.log(clicks)
+    // console.log(clicks)
   showContect(clicks)
 })
 
 leftBtn.addEventListener('click', () => {
     clicks = --clicks;
-    console.log(clicks)
+    // console.log(clicks)
     if (clicks < 0) {
         clicks = starter.length - 1;
     }
-    console.log(clicks)
+    // console.log(clicks)
     showContect(clicks)
 })
 
 randomBtn.addEventListener('click', () => {
    
     let random = Math.floor(Math.random() * starter.length)
-    console.log(random)
+    // console.log(random)
     showContect(random)
     
 })
